@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tess in Browser</title>
+<script src="coi-serviceworker.js"></script>
+</head>
+<body>
+<h1>Tess in Browser</h1>
+<p id="status">Loading...</p>
+<canvas id="canvas" width="1024" height="768" tabindex="-1" oncontextmenu="event.preventDefault()"></canvas>
+<p>Tess runs here as the unregistered evaluation version: everything works except saving, exporting and printing.
+To unlock them, <a href="http://www.peda.com/prices">buy a license</a> and enter your name and code under File &gt; Register... (the registration is kept in this browser).</p>
+<p>First start: Tess asks for an interface language and shows its license agreement, then a reminder screen whose buttons change places each time; pick Continue.</p>
+<p data-mesa>The 3D views (cone, cylinder, torus) are drawn by Mesa's software OpenGL inside the emulator, so they take a few seconds to appear. They need a tiling with translations, e.g. one from File &gt; New Heesch Tiling.</p>
+<!--no-mesa <p>This build has no OpenGL: don't open the 3D menu's views, they crash the emulator (reload the page if that happens).</p>-->
+<p>Add <code>?resolution=1280x1024</code> to the URL for a bigger screen.</p>
+<h3>Your files</h3>
+<p>Files a registered Tess saves or exports under C:\ are kept in this browser (IndexedDB); download them from this list. <button id="refresh" disabled>Refresh list</button></p>
+<ul id="files"></ul>
+<h3>Help</h3>
+<ul>
+<li><a href="help/Tutorials.html" target="_blank">Tess tutorials</a></li>
+<li><a href="help/ReadMe.html" target="_blank">Tess read me</a></li>
+</ul>
+<h3>Credit:</h3>
+<ul>
+<li><a href="http://www.peda.com/tess/">Tess</a> by Pedagoguery Software Inc.</li>
+<li><a href="https://github.com/danoon2/Boxedwine">Boxedwine</a> (<a href="license.txt">license</a>)</li>
+<li data-mesa><a href="https://www.mesa3d.org/">Mesa 3D</a> software OpenGL, Windows build by <a href="https://github.com/pal1000/mesa-dist-win">mesa-dist-win</a> (<a href="mesa-license.html">license</a>)</li>
+<li><a href="https://github.com/gzuidhof/coi-serviceworker">coi-serviceworker</a></li>
+<li>Layout from <a href="https://github.com/wangyenshu/elona-boxedwine-web">elona-boxedwine-web</a></li>
+</ul>
+<script src="shell.js"></script>
+</body>
+</html>
