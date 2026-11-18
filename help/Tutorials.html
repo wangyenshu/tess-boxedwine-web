@@ -1,0 +1,226 @@
+﻿<html>
+<head>
+<title>Tess Tutorials</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+<!--
+a:link { color: #700000; text-decoration: none; }
+a:visited { color: #703000; text-decoration: none; }
+a:hover { color: #ff0000; text-decoration: underline; }
+p.address { padding-left: 3em; text-indent: 0pt; }
+p { text-indent: 1.5em; margin-top: 0; margin-bottom: 0; line-height: 130%; }
+sub { line-height: 0.5em; font-family: Times; vertical-align: -50%; }
+p.first { text-indent: 0em; margin-top: 1em; margin-bottom: 0; }
+td.tutoriallabel { font-size: 90%; font-weight: bold; text-align: center; letter-spacing: 0.3em; background-color: black; color: white; }
+li { padding-bottom: 0px; }
+ul { padding-left: 10px; margin-left: 10px; margin-top: 0; margin-bottom: 0; }
+table.main { width: 30em; }
+td.maintitle { padding-top: 30px; font-size: 250%; text-align: center; letter-spacing: 0.1em; }
+table.tutorial {  }
+td.tutorialpict { padding-top: 70px; text-align: center; padding-bottom: 0; }
+td.tutorialnum { padding: 5px; padding-left: 40px; padding-right: 40px; font-size: 90%; letter-spacing: 0.4em; font-weight: bold; text-align: center; background-color: black; color: white; }
+td.tutorialtitle { padding-top: 5px; padding-bottom: 5px; font-size: 250%;  text-align: center; letter-spacing: 0.1em; }
+-->
+</style>
+</head>
+<body>
+<font face="Georgia">
+
+<table class="main" border=0 cellspacing=0 cellpadding=0>
+
+
+<tr><td class="maintitle">TESS<br>TUTORIALS</td></tr>
+<tr><td>
+
+<a name="English"></a>
+
+
+<a name="English-I"></a>
+<center>
+<table class="tutorial" cellspacing=0>
+<tr><td class="tutorialpict"><img src="img/fishstrip.gif" border=0></td></tr>
+<tr><td class="tutorialnum">TUTORIAL I</td></tr>
+<tr><td class="tutorialtitle">FISH</td></tr>
+</table>
+</center>
+
+<p class="first">
+In this tutorial, we will create an aspect-filled Heesch tiling of fish.
+
+<p>
+After starting Tess, begin by selecting <i>New Heesch Tiling</i>
+from the <i>File</i> menu. Our fish example will use Heesch tiling
+CC<sub>3</sub>C<sub>3</sub>C<sub>6</sub>C<sub>6</sub>.
+First adjust the list of available tilings by specifying,
+under the <i>Consider tiles</i> heading,
+that you are considering tiles
+<b>without</b> translations,
+<b>with</b> half-turns, and
+<b>without</b> glide reflections.
+Then, as shown in figure&nbsp;1, select the CC<sub>3</sub>C<sub>3</sub>C<sub>6</sub>C<sub>6</sub> tiling.
+If the Heesch symbols (names) are not visible, select <i>Show Heesch Symbols</i>
+in the <i>Heesch Tiling</i> menu.
+The <i>New Heesch Tiling</i> window shown in figure&nbsp;1 includes rotation markers (small grey diamonds and regular polygons)—you
+can show / hide these by selecting <i>Show Rotation Markers</i> from the <i>View</i> menu.
+
+<center>
+<br><img src="img/nht.gif"><br>
+<font size=-1>Figure 1. <i>New Heesch Tiling window<br>with tiling CC<sub>3</sub>C<sub>3</sub>C<sub>6</sub>C<sub>6</sub> selected.</i></font>
+</center><br>
+
+The CC<sub>3</sub>C<sub>3</sub>C<sub>6</sub>C<sub>6</sub> Heesch tiling fills the plane with copies of a single tile
+with six vertices.
+Three of the vertices lie on centers of rotational symmetry. These vertices are fixed and cannot be moved.
+The other three vertices lie on T-junctions. Select and then move the top T-junction vertex a little to the left and up,
+so that you see something close to figure&nbsp;2. The other T-junction vertices will automatically move so that
+the symmetry conditions remain satisfied.
+
+<center>
+<br><img src="img/nht2.gif"><br>
+<font size=-1>Figure 2. <i>New Heesch Tiling window<br>after a little editing</i></font>
+</center><br>
+
+If you were trying to decided on which type of tiling to use, you might at this point try editing
+other tilings in the <i>New Heesch Tiling</i> window, but since we’ll be using
+CC<sub>3</sub>C<sub>3</sub>C<sub>6</sub>C<sub>6</sub>, simply click on <i>Create</i> to bring up
+a new illustration window, as shown in figure&nbsp;3.
+
+<center>
+<br><img src="img/ht.gif"><br>
+<font size=-1>Figure 3. <i>Newly created Heesch tiling.</i></font>
+</center><br>
+
+I then edited the curves defining the tiling a little more and saved the illustration as “Fish”.
+See figure&nbsp;4. So that you can follow along, I’ve selected all curves so that all control points are showing.
+(The curves are using 100% <i>smooth corners</i>—corner controls are at the bottom of the tool window.
+You can bring up tool tips by leaving the cursor motionless over a tool.)
+
+<center>
+<br><img src="img/fish.gif"><br>
+<font size=-1>Figure 4. <i>Fish tiling.</i></font>
+</center><br>
+
+Select all three curves and then fill the tiles by selecting the <i>fill and stroke</i> icon in the tool window.
+Figure 5 shows the result with red as the fill colour.
+
+<center>
+<br><img src="img/redfish.gif"><br>
+<font size=-1>Figure 5. <i>Red fish tiling.</i></font>
+</center><br>
+
+Then select <i>Aspect Fill</i> from the <i>Object</i> menu. This will not cause a visible change immediately.
+Select one of the six curves emanating from a sixfold rotational symmetry and choose a new fill colour
+from the tool window. Only fish sharing a single orientation will change—this is what is meant by <i>aspect filling</i>.
+If you then select another one of the six emanating curves and another
+fill colour, you will then colour another set of fish.
+
+<p>
+Figure&nbsp;6 shows the illustration I created by picking a different colour for each aspect / orientation.
+
+<center>
+<br><img src="img/multifish.gif"><br>
+<font size=-1>Figure 6. <i>Aspect-filled fish tiling.</i></font>
+</center><br>
+
+After a little more editing, I produced the illustration shown in figure&nbsp;7 and saved it as “FishFinal”.
+I recommend that you regularly save versions of your work using different names (including the date / time
+in each file name is one simple and useful approach).
+This lets you look back at, or return to, earlier stages of an illustration.
+
+<center>
+<br><img src="img/finfish.gif"><br>
+<font size=-1>Figure 7. <i>Final fish tiling.</i></font>
+</center><br>
+
+
+
+
+
+<a name="English-II"></a>
+<center>
+<table class="tutorial" cellspacing=0>
+<tr><td class="tutorialpict"><img src="img/ugosstrip.gif" border=0></td></tr>
+<tr><td class="tutorialnum">TUTORIAL II</td></tr>
+<tr><td class="tutorialtitle">UNIDENTIFIED<br>GREENISH OBJECTS</td></tr>
+</table>
+</center>
+
+<p class="first">
+In this tutorial, we will create a family of greenish objects
+set against a dark green background.
+
+<p>
+Begin by starting Tess and selecting <i>New</i> from the <i>File</i> menu.
+Take a look at figure&nbsp;1 to see the shape I created. You can follow along
+by creating a similar or an entirely different shape. To create a shape like mine:
+<ul>
+<li>Draw a green disc (enter “100%” as the maximum corner radius in the tool window
+and use the <i>Foci Ellipse Tool</i>; to see tool tips, let the cursor loiter
+over a tool in the tool window).
+<li>Draw a white decagonal gadget using the
+<i>Regular Polygon Tool</i>. Click once in the illustration window to begin and then
+use the left- and right-arrow keys to adjust the number
+of sides while moving the cursor around. Click again to place the regular polygon
+and then edit the shape as desired.
+<li>Draw a black disc.
+</ul>
+I saved my creation as “UGO” for Unidentified Green Object.
+
+<center>
+<br><img src="img/ugo.gif"><br>
+<font size=-1>Figure 1. <i>Unidentified green object.</i></font>
+</center><br>
+
+I then changed symmetry groups, from C<sub>1</sub> to W<sub>3</sub> (Fejes Toth notation);
+see figure&nbsp;2.
+
+<center>
+<br><img src="img/ugow3.gif"><br>
+<font size=-1>Figure 2. <i>Unidentified green object,<br>W<sub>3</sub> symmetry group.</i></font>
+</center><br>
+
+As I didn’t want my green object to overlap itself, I selected it (via <i>Select All</i> from the
+<i>Edit</i> menu) and resized and repositioned it, as shown in figure&nbsp;3.
+
+<center>
+<br><img src="img/smallugo.gif"><br>
+<font size=-1>Figure 3. <i>Smaller unidentified green object.</i></font>
+</center><br>
+
+To create the illustration shown in figure&nbsp;4, I then copied it (via <i>Copy</i> from the <i>Edit</i>
+menu) and pasted (via <i>Paste</i> from the <i>Edit</i> menu) multiple copies, resizing and repositioning
+after each pasting. I saved my creation as “UGOs”.
+
+<center>
+<br><img src="img/ugos.gif"><br>
+<font size=-1>Figure 4. <i>Unidentified green objects.</i></font>
+</center><br>
+
+As I wanted a variety of greens, I selected the green discs one by one and fine-tuned their fill colours.
+To fine-tune a fill colour, hold down the Ctrl key before clicking on the fill colour swatch.
+The result is shown in figure&nbsp;5.
+
+<center>
+<br><img src="img/ugos2.gif"><br>
+<font size=-1>Figure 5. <i>Unidentified greenish objects.</i></font>
+</center><br>
+
+I then clicked on the background (to ensure that no object was selected),
+selected a filled object style (the leftmost rectangle under the <i>Fill / Stroke</i>
+tool heading), and selected a dark-green fill (by first selecting black and then fine-tuning that selection
+towards green).
+To set the background to this fill style, I then selected <i>Set Background</i> from the <i>View</i> menu.
+(To clear a background fill, first choose the unfilled object style and then select <i>Set Background</i>.)
+Figure&nbsp;6 shows my final creation.
+
+<center>
+<br><img src="img/ugos3.gif"><br>
+<font size=-1>Figure 6. <i>Unidentified greenish objects<br>over dark green background.</i></font>
+</center><br>
+
+
+</td></tr></table>
+
+</font>
+</body>
+</html>
