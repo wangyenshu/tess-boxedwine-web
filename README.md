@@ -1,6 +1,6 @@
 # tess-boxedwine-web
 
-[Tess](http://www.peda.com/tess/) 1.75 for Windows (Pedagoguery Software's symmetry and tessellation drawing program) running in the browser on [Boxedwine](https://github.com/danoon2/Boxedwine). The layout follows [elona-boxedwine-web](https://github.com/wangyenshu/elona-boxedwine-web): one `build.sh` that downloads everything and writes a static site to `dist/`, plus the page and launcher in `web/`.
+[Tess](http://www.peda.com/tess/) 1.75 for Windows (Pedagoguery Software's symmetry and tessellation drawing program) running in the browser on [Boxedwine](https://github.com/danoon2/Boxedwine). The layout: one `build.sh` that downloads everything and writes a static site to `dist/`, plus the page and launcher in `web/`.
 
 ```
 build.sh                 downloads, unpacks and assembles dist/
@@ -34,7 +34,7 @@ URL parameters: `?resolution=1280x1024`, `?winedebug=+seh`, `?gl=llvmpipe` (Mesa
 
 ## What the build does
 
-1. Takes `boxedwine.js` / `boxedwine.wasm` and the stripped Wine 11 file system from the official Boxedwine web release. No compiler is involved: elona-boxedwine-web recompiles Boxedwine to fix an audio crash and to let the heap grow, and Tess needs neither.
+1. Takes `boxedwine.js` / `boxedwine.wasm` and the stripped Wine 11 file system from the official Boxedwine web release. 
 2. Adds `glu32.dll.so` from Boxedwine's full Wine 11 file system. `tess.exe` imports GLU32, and the stripped file system doesn't have it, so Tess won't start without it.
 3. Unpacks `tess_setup.exe` (an NSIS installer) with 7-Zip into `C:\Tess`. Wine doesn't run the installer.
 4. Puts Mesa's software `opengl32.dll` (x86, from [mesa-dist-win](https://github.com/pal1000/mesa-dist-win)) next to `tess.exe`, and `shell.js` sets `WINEDLLOVERRIDES=opengl32=n,b`. Tess's 3D views (cone, cylinder, torus) use OpenGL, and Boxedwine's web build has none. Without Mesa, choosing a 3D view hits a page fault that escapes Boxedwine's CPU loop and kills the emulator. With Mesa, softpipe renders those views on the emulated CPU.
@@ -50,4 +50,4 @@ Tess is commercial software © Pedagoguery Software Inc. The build downloads it 
 
 ## Credits
 
-Tess by Pedagoguery Software Inc. · Boxedwine (GPL-2.0) · Mesa 3D (MIT), Windows build by mesa-dist-win · coi-serviceworker (MIT) · layout from elona-boxedwine-web
+Tess by Pedagoguery Software Inc. · Boxedwine (GPL-2.0) · Mesa 3D (MIT), Windows build by mesa-dist-win · coi-serviceworker (MIT) ·
